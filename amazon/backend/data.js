@@ -1,7 +1,23 @@
+import bcrypt from 'bcryptjs';
+
 const data = {
+  users: [
+    {  
+      name: 'Xus',
+      email: 'admin@example.com',
+      password: bcrypt.hashSync('1234', 8),
+      isAdmin: true,
+    },
+    {  
+      name: 'Jasmine',
+      email: 'jasmine@example.com',
+      password: bcrypt.hashSync('4321', 8),
+      isAdmin: false,
+    }
+  ],
     products: [ 
         {
-        _id: '1',
+        
         name: 'Mac computer',
         category: 'technology',
         image: '../products/macdesktop.jpg',
@@ -13,7 +29,7 @@ const data = {
        
        },
        {
-        _id: '2',
+        
         name: 'Led Monitor',
         category: 'technology',
         image: '../products/ledmonitor.jpg',
@@ -25,7 +41,7 @@ const data = {
        
        },
        {
-        _id: '3',
+        
         name: 'key board',
         category: 'technology',
         image: '../products/keyboard.webp',
@@ -37,7 +53,7 @@ const data = {
        
        },
        {
-        _id: '4',
+        
         name: 'mouse gamer',
         category: 'technology',
         image: '../products/mousegamer.jpg',
@@ -49,7 +65,7 @@ const data = {
        
        },
        {
-        _id: '5',
+        
         name: 'head phones',
         category: 'technology',
         image: '../products/sonyheadphones.jpg',
@@ -61,7 +77,7 @@ const data = {
        
        },
        {
-        _id: '6',
+        
         name: 'chair',
         category: 'technology',
         image: '../products/chair.jpg',

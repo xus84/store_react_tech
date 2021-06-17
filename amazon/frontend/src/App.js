@@ -3,6 +3,7 @@ import { BrowserRouter,  Route } from 'react-router-dom';
 import CartScreen from './screens/CartScreen';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
+import SigninScreen from './screens/SigninScreen';
 
  
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <main>
         <Route path="/cart/:id?" component={CartScreen}></Route>
         <Route path="/product/:id" component={ProductScreen}></Route>
+        <Route path="/signin" component={SigninScreen}></Route>
         <Route path="/" component={HomeScreen} exact></Route>
       </main>
       <footer clase="row center">All right reserved - 2021</footer>

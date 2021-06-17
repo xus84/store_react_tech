@@ -63,6 +63,10 @@ li{
   margin-top: 1rem;
 }
 
+i {
+  color:#f8f8f8;
+}
+
 button {
   padding: 1rem;
   border-radius: 0.5rem;

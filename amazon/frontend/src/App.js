@@ -3,6 +3,7 @@ import { BrowserRouter,  Route } from 'react-router-dom';
 import CartScreen from './screens/CartScreen';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
+
  
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <a className="brand" href="/">AMAZON</a>
         </div>
         <div>
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
           <a href="/cart">Cart</a>
           <a href="/signin">Sign In</a>
         </div>
